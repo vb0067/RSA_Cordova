@@ -1,0 +1,31 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+           id="cordova-plugin-rsa"
+      version="1.2.1">
+    <name>RSA</name>
+    <description>RSA 加密</description>
+    <license>Apache 2.0</license>
+    <keywords>RSA</keywords>
+
+    <engines>
+      <engine name="cordova-android" version=">=4.0.0" />
+    </engines>
+
+    <js-module src="www/RSA.js" name="rsa">
+        <clobbers target="deppon.rsa" />
+    </js-module>
+
+    <platform name="android">
+        <source-file src="src/android/Coder.java" target-dir="src/com/deppon/nci/plugins/rsa" />
+        <source-file src="src/android/RSA.java" target-dir="src/com/deppon/nci/plugins/rsa" />
+        <source-file src="src/android/RSACoder.java" target-dir="src/com/deppon/nci/plugins/rsa" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RSA" >
+                <param name="android-package" value="com.deppon.nci.plugins.rsa.RSA"/>
+            </feature>
+        </config-file>
+    </platform>
+    
+
+
+</plugin>

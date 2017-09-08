@@ -1,0 +1,17 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.yyeme.rsa"
+        },"cordova-plugin-rsa": {
+            "PACKAGE_NAME": "com.yyeme.rsa"
+        }
+    },
+    "dependent_plugins": {}
+}
